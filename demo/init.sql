@@ -1,0 +1,7 @@
+CREATE TABLE professor (
+    id BIGSERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    area VARCHAR(100),
+    telefone VARCHAR(20)
+);

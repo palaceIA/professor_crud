@@ -61,37 +61,37 @@
 
 `GET /professores`
 
-![Listar professores](demo/docs/get/getListProfessores.png)
+![Listar professores](docs/get/getListProfessores.png)
 
 ### Caso 2 — Filtrar por nome
 
 `GET /professores/nome/{nome}`
 
-![Filtrar por nome](demo/docs/get/getCasedSearchNome.png)
+![Filtrar por nome](docs/get/getCasedSearchNome.png)
 
 ### Caso 3 — Filtrar por área
 
 `GET /professores/area/{area}`
 
-![Filtrar por área](demo/docs/get/getCasedSearchArea.png)
+![Filtrar por área](docs/get/getCasedSearchArea.png)
 
 ### Caso 4 — Cadastrar professor
 
 `POST /professores` com o JSON enviado e a resposta da API (status 201 Created).
 
-![Cadastrar professor](demo/docs/post/postCreatedProfessor.png)
+![Cadastrar professor](docs/post/postCreatedProfessor.png)
 
 ### Caso 5 — Editar professor
 
 `PUT /professores/{id}` com o resultado da alteração.
 
-![Editar professor](demo/docs/put/putDataProfessor.png)
+![Editar professor](docs/put/putDataProfessor.png)
 
 ### Caso 6 — Excluir professor
 
 `DELETE /professores/{id}` e o resultado da exclusão (status 204 No Content).
 
-![Excluir professor](demo/docs/delete/returnPostDelete.png)
+![Excluir professor](docs/delete/returnPostDelete.png)
 
 ## Testes
 

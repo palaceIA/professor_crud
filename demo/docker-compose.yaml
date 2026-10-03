@@ -1,0 +1,24 @@
+
+services:
+  postgres:
+    image: postgres:16.15-alpine
+    container_name: postgres_crud
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: professor
+      POSTGRES_PASSWORD: professor
+      POSTGRES_DB: professor
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    networks:
+      - professor
+
+volumes:
+  postgres_data:
+
+networks:
+  professor:
+    driver: bridge
